@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>addBuddy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div>
+        <form th:action="@{'/addBuddy/' + ${id}}" method="post">
+            <label>Name:
+                <input type="text" name="name"><br>
+            </label>
+            <label>Phone Number:
+                <input type="text" name="phoneNum"><br>
+            </label>
+            <input type="submit" value="Add"><br>
+        </form>
+    </div>
+</body>
+</html>
