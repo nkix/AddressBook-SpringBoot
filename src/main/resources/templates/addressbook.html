@@ -12,11 +12,13 @@
             <th>Id</th>
             <th>Name</th>
             <th>Phone Number</th>
+            <th>Address</th>
         </tr>
         <tr th:each="buddyInfo : ${addressbook.buddyList}">
             <td th:text="${buddyInfo.id}"></td>
             <td th:text="${buddyInfo.name}"></td>
             <td th:text="${buddyInfo.phoneNum}"></td>
+            <td th:text="${buddyInfo.address}"></td>
         </tr>
     </table>
 </body>
